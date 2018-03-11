@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="panels">
+        <div class="panel panel1">
+            <p>My</p>
+            <p>Abstract</p>
+            <p>Art</p>
+        </div>
+        <div class="panel panel2">
+            <p>My</p>
+            <p>Nature</p>
+            <p>Love</p>
+        </div>
+        <div class="panel panel3">
+            <p>My</p>
+            <p>Lens</p>
+            <p>Settings</p>
+        </div>
+        <div class="panel panel4">
+            <p>My</p>
+            <p>Adventerous</p>
+            <p>RoadTrips</p>
+        </div>
+        <div class="panel panel5">
+            <p>Fat</p>
+            <p>Wedding</p>
+            <p>Collection</p>
+        </div>
+    </div>
+    <script>
+        
+        var panels = document.querySelectorAll(".panel");
+        panels.forEach(panel => panel.addEventListener("click", () => {
+            panel.classList.toggle('open-img');
+        }));
+        // panels.forEach(panel => panel.addEventListener("transitionend"));
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+
+html {
+    box-sizing: border-box;
+    color:#fff;
+    font-family: 'Amatic SC', cursive;
+    font-size :30px;
+    font-weight: 200;
+}
+
+body {
+    margin:0;
+}
+
+.panels {
+    overflow:hidden;
+    min-height: 100vh;
+    display:flex;
+    
+}
+
+.panel {
+    background: #8ab;
+    flex-grow:1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    transition: all 0.7s ease-in-out;
+}
+
+.panel > * {
+    display:flex;
+    flex-grow:1;
+    justify-content: center;
+    align-items:center;
+}
+
+.open-img {
+    font-size : 40px;
+    flex-grow:5;
+}
+
+.panel > *:first-child {
+    transform: translateY(-100%);
+}
+.panel > *:last-child {
+    transform: translateY(100%);
+}
+.panel.open-img > *:first-child {
+    transform: translateY(0);
+}
+.panel.open-img > *:last-child {
+    transform: translateY(0);
+}
+
+.panels .panel1 {
+    background: url('a (1).jpeg');
+    background-size:cover;
+    background-position:center;
+}
+
+.panels .panel2 {
+    background: url('a (2).jpeg');
+}
+
+.panels .panel3 {
+    background: url('a (3).jpeg');
+}
+
+.panels .panel4 {
+    background: url('a (4).jpeg');
+}
+
+.panels .panel5 {
+    background: url('a (5).jpeg');
+}
